@@ -43,9 +43,10 @@ a {
 
 .card-heart {
   color: #CC2424;
-  font-size: 20px;
-  margin: -500px 0 0 -250px; 
+  font-size: 25px;
+  margin: 0 0 0 -240px; 
   position: relative;
+  top: -65px;
 }
 
 .card-img-batman {
