@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-top {
+  background-color:#1CD1B0;
+  padding: 10px;
+}
+
+.header-bottom {
+  background-color:#00669F;
+  padding: 38px;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #F3F3F3;
+  position: relative;
+  text-align:center;
+  margin: 50px;
+}
+
+.card-heart {
+  color: red;
+  font-size: 20px;
+  margin: 0 0 0 -250px;
+}
+
+.card-img-batman {
+  background: #F3F3F3 url('../img/card-batman-fondo.png');
+  padding: 80px;
+  width: 300px;
+  position: relative;
+}
+
+.card-img-harley {
+  background: #F3F3F3 url('../img/card-harley-fondo.png');
+  padding: 80px;
+  width: 300px;
+  position: relative;
+}
+
+.card-perfil{
+  border-radius: 70px;
+  position: absolute;
+  z-index: 9;
+  margin: -115px -60px;
+}
+
+.card-text {
+  padding: 50px;
+  position: relative;
+  font-weight: 400;
+}
+
+.card-text h2{
+  padding: 15px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.card-text p {
+  padding: 5px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.card-btn{
+  color: white;
+  background-color: #00669F;
+  padding: 10px;
+  margin: 50px;
+}
+
+footer{
+  background-color:#00669F;
+  padding: 10px;
+  color: white;
+  font-weight: 400;
+}
