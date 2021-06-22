@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -45,7 +46,7 @@ a {
 
 .card-heart {
   color: #CC2424;
-  font-size: 25px;
+  font-size: 30px;
   margin: 0 0 0 -240px; 
   position: relative;
   top: -65px;
@@ -75,15 +76,13 @@ a {
 }
 
 .card-text {
-  padding: 50px;
+  padding: 20px;
   position: relative;
-  font-weight: 400;
 }
 
 .card-text h2{
   padding: 15px;
   text-align: center;
-  font-weight: 400;
 }
 
 .card-text p {
@@ -104,5 +103,4 @@ footer{
   background-color:#00669F;
   padding: 10px;
   color: white;
-  font-weight: 400;
 }
