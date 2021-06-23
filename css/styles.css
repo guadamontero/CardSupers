@@ -31,10 +31,14 @@ a {
 .container {
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 300px;
   border-radius: 10px 10px 0 0;
   background-color: #F3F3F3;
@@ -55,7 +59,6 @@ a {
 .card-img-batman {
   background: #F3F3F3 url('../img/card-batman-fondo.png');
   padding: 80px;
-  width: 300px;
   position: relative;
   border-radius: 10px 10px 0 0;
 }
@@ -63,7 +66,6 @@ a {
 .card-img-harley {
   background: #F3F3F3 url('../img/card-harley-fondo.png');
   padding: 80px;
-  width: 300px;
   position: relative;
   border-radius: 10px 10px 0 0;
 }
