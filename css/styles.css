@@ -4,6 +4,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
@@ -12,19 +15,36 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
 /*--------HEADER--------*/
+
+header, footer {
+  padding: 1em;
+}
+
 .header-top {
-  background-color:#1CD1B0;
-  padding: 10px;
+  background-color: #D1891C;
+  padding: 0.5rem 1rem;
 }
 
 .header-bottom {
   background-color:#00669F;
-  padding: 38px;
+  color: #F3F3F3;
   position: sticky;
   top: 0px;
   z-index: 10;
-  box-shadow: 3px 3px 3px 2px rgba(20, 14, 14, 0.5);
+  box-shadow: 0 0 0 1px rgba(20, 14, 14, 0.5);
+}
+
+h1 {
+  font-weight: 400;
 }
 
 /*--------MAIN--------*/
@@ -33,6 +53,7 @@ a {
   text-align: center;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -57,24 +78,48 @@ a {
 }
 
 .card-img-batman {
-  background: #F3F3F3 url('../img/card-batman-fondo.png');
-  padding: 80px;
+  background: #F3F3F3 url('../img/card-batman-fondo.svg');
+  background-size: cover;
+  padding: 5rem;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-img-wonder-woman {
+  background: #F3F3F3 url('../img/card-wonder-woman-fondo.svg');
+  background-size: cover;
+  padding: 5rem;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-img-superman {
+  background: #F3F3F3 url('../img/card-superman-fondo.svg');
+  background-size: cover;
+  padding: 5rem;
   position: relative;
   border-radius: 10px 10px 0 0;
 }
 
 .card-img-harley {
-  background: #F3F3F3 url('../img/card-harley-fondo.png');
-  padding: 80px;
+  background: #F3F3F3 url('../img/card-harley-fondo.svg');
+  background-size: cover;
+  padding: 5rem;
   position: relative;
   border-radius: 10px 10px 0 0;
 }
 
 .card-perfil{
-  border-radius: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8a8787;
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
   position: absolute;
   z-index: 9;
-  margin: -115px -60px;
+  margin: -6rem 4rem;
   box-shadow: 0px 10px 7px rgb(0 0 0 / 15%);
 }
 
@@ -84,7 +129,7 @@ a {
 }
 
 .card-text h2{
-  padding: 15px;
+  padding: 3rem 0 1rem 0 ;
   text-align: center;
 }
 
