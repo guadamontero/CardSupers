@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+  --colorPrincipal: #00669F;
+  --colorEnlaces: #f3f3f3;
+  --colorCard: #f3f3f3; 
+}
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -35,8 +41,8 @@ header, footer {
 }
 
 .header-bottom {
-  background-color:#00669F;
-  color: #F3F3F3;
+  background-color: var(--colorPrincipal);
+  color: var(--colorEnlaces);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -54,14 +60,14 @@ main {
 }
 
 .icono-mas {
-  background-color: #00669F;
+  background-color: var(--colorPrincipal);
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #F3F3F3;
+  color: var(--colorEnlaces);
   position: absolute;
   right: 1rem;
   top: 48%;
@@ -86,7 +92,7 @@ main {
   justify-content: center;
   width: 300px;
   border-radius: 10px 10px 0 0;
-  background-color: #F3F3F3;
+  background-color: var(--colorCard);
   position: relative;
   text-align:center;
   margin: 50px;
@@ -110,7 +116,7 @@ main {
 }
 
 .card-img-wonder-woman {
-  background: #F3F3F3 url('../img/card-wonder-woman-fondo.svg');
+  background: var(--colorCard) url('../img/card-wonder-woman-fondo.svg');
   background-size: cover;
   padding: 5rem;
   position: relative;
@@ -118,7 +124,7 @@ main {
 }
 
 .card-img-superman {
-  background: #F3F3F3 url('../img/card-superman-fondo.svg');
+  background: var(--colorCard) url('../img/card-superman-fondo.svg');
   background-size: cover;
   padding: 5rem;
   position: relative;
@@ -126,7 +132,7 @@ main {
 }
 
 .card-img-harley {
-  background: #F3F3F3 url('../img/card-harley-fondo.svg');
+  background: var(--colorCard) url('../img/card-harley-fondo.svg');
   background-size: cover;
   padding: 5rem;
   position: relative;
@@ -164,15 +170,15 @@ main {
 }
 
 .card-btn{
-  color: white;
-  background-color: #00669F;
+  color: var(--colorEnlaces);
+  background-color: var(--colorPrincipal);
   padding: 10px;
   margin: 50px;
 }
 
 /*--------FOOTER--------*/
 footer{
-  background-color:#00669F;
+  background-color:var(--colorPrincipal);
   padding: 1.5rem;
   color: white;
   text-align: center;
