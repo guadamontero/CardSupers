@@ -56,20 +56,20 @@ main {
 .icono-mas {
   background-color: #00669F;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #F3F3F3;
   position: absolute;
   right: 1rem;
-  top: 50%;
-  z-index: 999;
+  top: 48%;
+  z-index: 8;
 }
 
 .mas {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .container {
@@ -183,9 +183,13 @@ footer img{
   width: 9%;
   position: absolute;
   top: 1rem;
-  right: 5rem;
+  right: 7rem;
 }
 
+
+/*--------MEDIAS QUERIES--------*/
+
+/* ------TABLET------ */
 @media screen and (max-width: 768px) {
   .container {
     flex-wrap: wrap;
@@ -194,12 +198,37 @@ footer img{
   .card {
     margin: 1rem;
   }
+  footer img {
+    width: 9%;
+    position: absolute;
+    top: 1.3rem;
+    right: 4rem;
+  }
 }
 
+/* ------CELULAR------ */
 @media screen and (max-width: 480px) {
   .container {
     flex-direction: column;
     align-items: center;
+  }
+  .icono-mas {
+    top: 49%;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  footer p{
+    font-size: 0.7em;
+  }
+  footer img {
+    width: 12%;
+    position: absolute;
+    right: 1.5em;
+    top: 1.4em;
   }
 }
 
