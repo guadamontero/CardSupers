@@ -26,7 +26,7 @@ li {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /*--------HEADER--------*/
@@ -62,20 +62,21 @@ main {
 .icono-mas {
   background-color: var(--colorPrincipal);
   border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--colorEnlaces);
-  position: absolute;
+  position: fixed;
   right: 1rem;
   top: 48%;
   z-index: 8;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 24%);
 }
 
 .mas {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .container {
@@ -89,7 +90,7 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   width: 300px;
   border-radius: 10px 10px 0 0;
   background-color: var(--colorCard);
@@ -174,22 +175,21 @@ main {
   background-color: var(--colorPrincipal);
   padding: 10px;
   margin: 50px;
+  border-radius: 8%;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 24%);
 }
 
 /*--------FOOTER--------*/
 footer{
   background-color:var(--colorPrincipal);
-  padding: 1.5rem;
   color: white;
-  text-align: center;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer img{
-  width: 9%;
-  position: absolute;
-  top: 1rem;
-  right: 7rem;
+  width: 10vw;
 }
 
 
@@ -204,12 +204,6 @@ footer img{
   .card {
     margin: 1rem;
   }
-  footer img {
-    width: 9%;
-    position: absolute;
-    top: 1.3rem;
-    right: 4rem;
-  }
 }
 
 /* ------CELULAR------ */
@@ -220,21 +214,6 @@ footer img{
   }
   .icono-mas {
     top: 49%;
-  }
-  footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-  }
-  footer p{
-    font-size: 0.7em;
-  }
-  footer img {
-    width: 12%;
-    position: absolute;
-    right: 1.5em;
-    top: 1.4em;
   }
 }
 
