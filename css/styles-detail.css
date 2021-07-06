@@ -3,67 +3,93 @@ a{
 }
 
 main {
-  width: 100vw;
-  height: 120vh;
+  width: 100%;
+  height: 130vh;
 }
 
 .harley-quinn-container {
-  background: cornsilk url(/img/harley-fondo.png) no-repeat;
+  background: cornsilk url(../img/harley-fondo.png) no-repeat;
   background-size: cover;
 }
 
 .superman-container {
-  background: cornsilk url(/img/superman-fondo.jpg) no-repeat;
+  background: cornsilk url(../img/superman-fondo.jpg) no-repeat;
   background-size: cover;
 }
 
 .wonderwoman-container {
-  background: cornsilk url(/img/mujermaravilla-fondo.jpg) no-repeat;
+  background: cornsilk url(../img/mujermaravilla-fondo.jpg) no-repeat;
   background-size: cover;
 }
 
-.batman-container {
-  background: cornsilk url(/img/batman-fondo.jpg) no-repeat;
+.batman-detail {
+  background: cornsilk url(../img/batman-fondo.jpg) no-repeat;
   background-size: cover;
 }
 
 .perfil {
-  position: absolute;
   border-radius: 50%;
-  margin: 1.5rem 35rem;
-  z-index: 5;
-}
-
-.super-perfil {
-  width: 13%;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 50%);
+  left: calc(47% - 60px);
+  position: absolute;
+  top: -80px;
+  width: 9rem;
 }
 
 h3 {
   text-align: center;
   font-size: 2rem;
-  padding-top: 1rem;
+  padding: 1rem;
+}
+
+.super-container {
+  top: 7rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 45px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 24%);
+  position: relative;
+  width: 40%;
+  min-width: 18rem;
+  background-color: #F3F3F3;
+  margin: 0 auto;
 }
 
 .contenido-super {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 8rem;
   position: relative;
-  text-align: justify;
-  align-items: center;
-  background-color: #fff;
-  width: 40%;
-  border-radius: 10%;
-  padding: 4rem 1rem;
+  padding: 4rem 1.5rem 2rem;
 }
 
-.armas img {
+.armas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding: 2em 1em;
 }
 
-.contenido-super a{
-  color: #2C0187;
+.super-container a{
+  color: #F3F3F3;
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+.home {
+  background-color: #2C0187;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 0 0 45px 45px;
+}
+
+@media screen and (max-width:950px) {
+  main {
+    width: 100%;
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width:780px) {
+  main {
+    width: 100%;
+    height: 160vh;
+  }
 }
