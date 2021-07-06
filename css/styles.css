@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
   --colorPrincipal: #00669F;
@@ -31,16 +34,15 @@ img {
 
 /*--------HEADER--------*/
 
-header, footer {
-  padding: 1em;
-}
-
 .header-top {
-  background-color: #D1891C;
-  padding: 0.5rem 1rem;
+  background-color:#1CD1B0;
+  padding: 0.2em;
 }
 
 .header-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--colorPrincipal);
   color: var(--colorEnlaces);
   position: sticky;
@@ -49,8 +51,42 @@ header, footer {
   box-shadow: 0 0 0 1px rgba(20, 14, 14, 0.5);
 }
 
+.header-bottom img {
+  width: 7%;
+}
+
+.logo {
+  font-family: 'Encode Sans SC', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5em;
+}
+
+.menu {
+  padding: 0.5em 1.5em;
+  background-color: #001D2D;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #F3F3F3;
+}
+
+ul {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
 h1 {
   font-weight: 400;
+}
+
+h1 a{
+  text-decoration: none;
+  color: #F3F3F3;
 }
 
 /*--------MAIN--------*/
@@ -179,17 +215,88 @@ main {
   box-shadow: 0 5px 5px rgb(0 0 0 / 24%);
 }
 
+form{
+  padding: 4rem;
+  max-width: 650px;
+  margin: 1.5em auto;
+  font-family: 'Karla', sans-serif;
+}
+
+label {
+  padding: 1rem 0;
+}
+
+.form-container h2{
+  padding-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 4rem;
+}
+
+form input, form textarea{
+  margin: 1rem 0;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 13px; 
+  border: solid 1.5px; 
+  color: #525c66; 
+  font-size: 1em;
+}
+
+form input {
+  cursor: pointer;
+}
+
+form select{
+  display: block;
+  width: 100%;
+  padding: 13px; 
+  margin: 1rem 0;
+  font-family: 'Karla', sans-serif;
+}
+
+
+textarea { 
+  resize: none; 
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+}
+
+.boton-resetear {
+  background-color: #888888;
+  border: none;
+  color: #f3f3f3;
+  font-weight: 600;
+}
+
+.boton-entrar {
+  background-color: #1CD1B0;
+  border: none;
+  color: #000;
+  font-weight: 600;
+}
+
+
+.boton-registrar {
+  background-color: #1CD1B0;
+  border: none;
+  color: #000;
+  font-weight: 600;
+}
+
+form p {
+  text-align: center;
+}
+
 /*--------FOOTER--------*/
 footer{
   background-color:var(--colorPrincipal);
   color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer img{
-  width: 10vw;
+  text-align: center;
+  padding: 1em;
 }
 
 

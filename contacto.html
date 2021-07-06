@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="header-top">
+    <p>20% de descuento en todos los productos!</p>
+  </div>
+
+  <!-----------------HEADER----------------->
+  <header class="header-bottom">
+    <div class="logo">
+      <img src="img/logo.svg" alt="logo">
+      <h1><a href="/index.html">Tienda Supers</a></h1>
+    </div>
+  </header>
+
+  <!-----------------MAIN----------------->
+  <main>
+    <div class="form-container">
+      <form action="#" method="POST">
+        <h2>Contacto</h2>
+        <label for="nombre">Nombre y Apellido:
+          <input type="text" id="nombre" name="nombre" placeholder="Jonathan González" required oninvalid="setCustomValidity('Por favor, completar correctamente')">
+        </label>
+        <label for="correo">Correo electrónico:
+          <input type="email" name="correo" id="correo" placeholder="Jonathan@digitalhouse.com">
+        </label>
+        <label for="comentarios">Deja tu comentario:
+          <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Hola!, me gustaría recibir información sobre el muñeco de Batman, ya que como saben soy muy fanático de bruce wayne. Gracias!"></textarea>
+        </label>
+        <div class="botones">
+          <input type="reset" value="Resetear" class="boton-resetear">
+          <input type="submit" value="Entrar" class="boton-entrar">
+        </div>
+      </form>
+      
+    </div>
+  </main>
+
+  <!-----------------FOOTER----------------->
+  <footer>
+    <div>
+      <p>Todos los derechos reservados a FRONT END 1</p>
+    </div>
+  </footer>
+
+</body>
+</html>
