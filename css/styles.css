@@ -1,14 +1,17 @@
+/*-----------FUENTES TIPOGRAFICAS-----------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/*-----------VARIABLES-----------*/
 :root {
   --colorPrincipal: #00669F;
   --colorEnlaces: #f3f3f3;
   --colorCard: #f3f3f3; 
 }
 
+/*-----------GENERAL-----------*/
 *{
   box-sizing: border-box;
   margin: 0;
@@ -32,7 +35,7 @@ img {
   max-width: 100%;
 }
 
-/*--------HEADER--------*/
+/*-----------HEADER-----------*/
 
 .header-top {
   background-color:#1CD1B0;
@@ -94,10 +97,18 @@ h1 a{
   font-size: 1.5rem;
 }
 
-/*--------MAIN--------*/
+/*-----------INICIO MAIN-----------*/
 
 main {
   position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .icono-mas {
@@ -120,14 +131,7 @@ main {
   font-size: 2.5em;
 }
 
-.container {
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
+/*-----------SECTION CARDS SUPERS-----------*/
 .card {
   display: flex;
   flex-direction: column;
@@ -147,38 +151,6 @@ main {
   margin: 0 0 0 -240px; 
   position: relative;
   top: -65px;
-}
-
-.card-img-batman {
-  background: #F3F3F3 url('../img/card-batman-fondo.svg');
-  background-size: cover;
-  padding: 5rem;
-  position: relative;
-  border-radius: 10px 10px 0 0;
-}
-
-.card-img-wonder-woman {
-  background: var(--colorCard) url('../img/card-wonder-woman-fondo.svg');
-  background-size: cover;
-  padding: 5rem;
-  position: relative;
-  border-radius: 10px 10px 0 0;
-}
-
-.card-img-superman {
-  background: var(--colorCard) url('../img/card-superman-fondo.svg');
-  background-size: cover;
-  padding: 5rem;
-  position: relative;
-  border-radius: 10px 10px 0 0;
-}
-
-.card-img-harley {
-  background: var(--colorCard) url('../img/card-harley-fondo.svg');
-  background-size: cover;
-  padding: 5rem;
-  position: relative;
-  border-radius: 10px 10px 0 0;
 }
 
 .card-perfil{
@@ -220,7 +192,38 @@ main {
   box-shadow: 0 5px 5px rgb(0 0 0 / 24%);
 }
 
-form{
+.card-background {
+  padding: 5rem;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+/*-----------BATMAN-----------*/
+.card-img-batman {
+  background: #F3F3F3 url('../img/card-batman-fondo.svg');
+  background-size: cover;
+}
+
+/*-----------MUJER MARAVILLA-----------*/
+.card-img-wonder-woman {
+  background: var(--colorCard) url('../img/card-wonder-woman-fondo.svg');
+  background-size: cover;
+}
+
+/*-----------SUPERMAN-----------*/
+.card-img-superman {
+  background: var(--colorCard) url('../img/card-superman-fondo.svg');
+  background-size: cover;
+}
+
+/*-----------HARLEY QUINN-----------*/
+.card-img-harley {
+  background: var(--colorCard) url('../img/card-harley-fondo.svg');
+  background-size: cover;
+}
+
+/*-----------FORMULARIOS-----------*/
+form {
   padding: 4rem;
   max-width: 650px;
   margin: 1.5em auto;
@@ -248,10 +251,6 @@ form input, form textarea{
   font-size: 1em;
 }
 
-form input {
-  cursor: pointer;
-}
-
 form select{
   display: block;
   width: 100%;
@@ -259,7 +258,6 @@ form select{
   margin: 1rem 0;
   font-family: 'Karla', sans-serif;
 }
-
 
 textarea { 
   resize: none; 
@@ -270,33 +268,36 @@ textarea {
   gap: 10px;
 }
 
-.boton-resetear {
+.btn {
+  border: transparent;
+  font-weight: 600;
+  border-radius: 23px;
+  cursor: pointer;
+}
+
+.resetear {
   background-color: #888888;
-  border: none;
   color: #f3f3f3;
-  font-weight: 600;
 }
 
-.boton-entrar {
+.entrar {
   background-color: #1CD1B0;
-  border: none;
   color: #000;
-  font-weight: 600;
 }
 
 
-.boton-registrar {
+.registrar {
   background-color: #1CD1B0;
-  border: none;
   color: #000;
-  font-weight: 600;
 }
 
 form p {
+  padding-top: 2rem;
   text-align: center;
 }
+/*-----------FIN MAIN-----------*/
 
-/*--------FOOTER--------*/
+/*-----------FOOTER-----------*/
 footer{
   background-color:var(--colorPrincipal);
   color: white;

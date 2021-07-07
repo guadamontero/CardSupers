@@ -7,25 +7,13 @@ main {
   height: 130vh;
 }
 
-.harley-quinn-container {
-  background: cornsilk url(../img/harley-fondo.png) no-repeat;
-  background-size: cover;
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
-.superman-container {
-  background: cornsilk url(../img/superman-fondo.jpg) no-repeat;
-  background-size: cover;
-}
-
-.wonderwoman-container {
-  background: cornsilk url(../img/mujermaravilla-fondo.jpg) no-repeat;
-  background-size: cover;
-}
-
-.batman-detail {
-  background: cornsilk url(../img/batman-fondo.jpg) no-repeat;
-  background-size: cover;
-}
+/* ------------SUPERS------------ */
 
 .perfil {
   border-radius: 50%;
@@ -36,12 +24,6 @@ main {
   width: 9rem;
 }
 
-h3 {
-  text-align: center;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
 .super-container {
   top: 7rem;
   display: flex;
@@ -49,7 +31,7 @@ h3 {
   border-radius: 45px;
   box-shadow: 0 5px 5px rgb(0 0 0 / 24%);
   position: relative;
-  width: 40%;
+  width: 45%;
   min-width: 18rem;
   background-color: #F3F3F3;
   margin: 0 auto;
@@ -58,13 +40,6 @@ h3 {
 .contenido-super {
   position: relative;
   padding: 4rem 1.5rem 2rem;
-}
-
-.armas {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2em 1em;
 }
 
 .super-container a{
@@ -76,9 +51,44 @@ h3 {
 .home {
   background-color: #2C0187;
   text-align: center;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 0 0 45px 45px;
 }
+
+/* ------------BATMAN------------ */
+
+.batman-detail {
+  background: cornsilk url(../img/batman-fondo.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* ------------MUJER MARAVILLA------------ */
+.wonderwoman-container {
+  background: cornsilk url(../img/mujermaravilla-fondo.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* ------------SUPERMAN------------ */
+.superman-container {
+  background: cornsilk url(../img/superman-fondo.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* ------------HARLEY QUINN------------ */
+.harley-quinn-container {
+  background: cornsilk url(../img/harley-fondo.png) no-repeat;
+  background-size: cover;
+}
+
+.armas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 1em;
+}
+
+
+/* ------------MEDIAS QUERIES------------ */
 
 @media screen and (max-width:950px) {
   main {
