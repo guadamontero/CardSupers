@@ -92,11 +92,6 @@ h1 a{
   color: #F3F3F3;
 }
 
-.icono-volver {
-  color: #f3f3f3;
-  font-size: 1.5rem;
-}
-
 /*-----------INICIO MAIN-----------*/
 
 main {
@@ -163,12 +158,12 @@ main {
   width: 8rem;
   position: absolute;
   z-index: 9;
-  margin: -6rem 4rem;
+  margin: -6rem 4.5rem;
   box-shadow: 0px 10px 7px rgb(0 0 0 / 15%);
 }
 
 .card-text {
-  padding: 20px;
+  padding: 15px;
   position: relative;
 }
 
@@ -179,8 +174,8 @@ main {
 
 .card-text p {
   padding: 5px;
-  text-align: left;
-  margin-bottom: 30px;
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
 .card-btn{
@@ -193,7 +188,7 @@ main {
 }
 
 .card-background {
-  padding: 5rem;
+  padding: 4.5rem;
   position: relative;
   border-radius: 10px 10px 0 0;
 }
@@ -226,7 +221,7 @@ main {
 form {
   padding: 4rem;
   max-width: 650px;
-  margin: 1.5em auto;
+  margin: 0 auto;
   font-family: 'Karla', sans-serif;
 }
 
@@ -295,6 +290,34 @@ form p {
   padding-top: 2rem;
   text-align: center;
 }
+
+.icono-volver {
+  color: #f3f3f3;
+  font-size: 1.5rem;
+}
+
+.volver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  background-color: #001D2D;
+  width: 10%;
+  margin-left: 45%;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.volver p {
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 700;
+  color: #F3F3F3;
+  font-size: 1.1rem;
+}
+
 /*-----------FIN MAIN-----------*/
 
 /*-----------FOOTER-----------*/
