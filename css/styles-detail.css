@@ -49,10 +49,15 @@ h3 {
 }
 
 .home {
-  background-color: #2C0187;
+  background-color: #110036;
   text-align: center;
   padding: 2rem;
   border-radius: 0 0 45px 45px;
+}
+
+.home:hover {
+  background-color: rgba(17, 0, 54, 0.9);
+  transition: all 0.5s;
 }
 
 /* ------------BATMAN------------ */

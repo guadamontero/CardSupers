@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Supers</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles-añadir.css" />
+  </head>
+  <body>
+    <div class="header-top">
+      <p>20% de descuento en todos los productos!</p>
+    </div>
+
+    <!-----------------HEADER----------------->
+    <header class="header-bottom">
+      <div class="logo">
+        <img src="img/logo.svg" alt="logo" />
+        <h1><a href="index.html">Tienda Supers</a></h1>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="contacto.html" class="link-menu">Contacto</a></li>
+            <li>
+              <a href="registrarme.html" class="link-menu">Registrarme</a>
+            </li>
+            <li><a href="login.html" class="link-menu">Ingresar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-----------------MAIN----------------->
+    <main>
+      <section>
+          <h2>Añadí tu super!</h2>
+          <p>Agregá tu personaje favorito completando las opciones.</p>
+          <div class="form-container">
+          <div class="datos1">
+            <form action="#" class="form-1">
+              <label for="nombre"
+                >Nombre:
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Juan Perez"
+                  required
+                  oninvalid="setCustomValidity('Por favor, completar correctamente')"
+                />
+              </label>
+              <label for="fecha">
+                Fecha:
+                <input type="date" name="fecha" id="fecha" />
+              </label>
+              Descripcion:
+              <textarea
+                name="descripcion"
+                id="descripcion"
+                cols="30"
+                rows="10"
+                placeholder="Descripcion"
+              ></textarea>
+          </div>
+          <div class="datos2">
+
+            <label for="descripcion"></label>
+          </form>
+          <form action="#" class="form2">
+            <label for="especie"
+              >Especie
+              <select name="especie" id="especie">
+                <option selected="true" disabled="disabled">Especie</option>
+                <option value="unk">Unknown</option>
+                <option value="sup">DC</option>
+                <option value="vill">Marvel</option>
+              </select>
+            </label>
+            <div class="agregar-foto">
+              <label for="doc">Agregar foto</label>
+                  <input type="file" id="doc" accept=".jpg, .pdf, .png" name="doc" multiple>
+            </div>
+              <div class="poderes">
+                <p>Poderes:</p>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="poder1"
+                    value="Volar"
+                  />
+                  <label for="poderes">Volar</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="poder2"
+                    value="SuperInteligencia"
+                  />
+                  <label for="poderes">SuperInteligencia</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="poder3"
+                    value="Laser"
+                  />
+                  <label for="poderes">Vista de rayo láser</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="poder4"
+                    value="Billetera"
+                  />
+                  <label for="poderes">Billetera gorda</label>
+                </div>
+              <div class="personaje">
+                <p>Tipo de personaje</p>
+                <label for="personaje1" class="vert">
+                  <input
+                    type="radio"
+                    id="personaje1"
+                    name="personaje"
+                    value="Heroe"
+                  />
+                  Héroe / Heroina</label
+                >
+                <label for="personaje2" class="vert">
+                  <input
+                    type="radio"
+                    id="personaje2"
+                    name="personaje"
+                    value="Villano"
+                  />
+                  Villano / Villana</label
+                >
+            </div>
+            </div>
+          </div>
+              </form>
+              </section>
+    </main>
+
+    <!-----------------FOOTER----------------->
+    <footer>
+      <div>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+      </div>
+    </footer>
+  </body>
+</html>
