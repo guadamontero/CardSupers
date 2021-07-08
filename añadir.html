@@ -36,13 +36,16 @@
     <!-----------------MAIN----------------->
     <main>
       <section>
-          <h2>Añadí tu super!</h2>
-          <p>Agregá tu personaje favorito completando las opciones.</p>
+        <div class="section-container">
+          <div class="titulos">
+            <h2>Añadí tu super!</h2>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+          </div>
           <div class="form-container">
           <div class="datos1">
             <form action="#" class="form-1">
               <label for="nombre"
-                >Nombre:
+                class="label-form">Nombre
                 <input
                   type="text"
                   id="nombre"
@@ -52,39 +55,40 @@
                   oninvalid="setCustomValidity('Por favor, completar correctamente')"
                 />
               </label>
-              <label for="fecha">
-                Fecha:
+              <label for="fecha" class="label-form" >
+                Fecha
                 <input type="date" name="fecha" id="fecha" />
               </label>
-              Descripcion:
-              <textarea
+              <label for="descripcion" class="label-form">
+                Descripción
+                <textarea
                 name="descripcion"
                 id="descripcion"
                 cols="30"
-                rows="10"
+                rows="11"
                 placeholder="Descripcion"
               ></textarea>
+              </label>
           </div>
           <div class="datos2">
 
             <label for="descripcion"></label>
           </form>
           <form action="#" class="form2">
-            <label for="especie"
-              >Especie
-              <select name="especie" id="especie">
-                <option selected="true" disabled="disabled">Especie</option>
-                <option value="unk">Unknown</option>
-                <option value="sup">DC</option>
-                <option value="vill">Marvel</option>
-              </select>
-            </label>
-            <div class="agregar-foto">
-              <label for="doc">Agregar foto</label>
+              <label for="especie" class="label-form"
+                >Especie
+                <select name="especie" id="especie">
+                  <option selected="true" disabled="disabled">Especie</option>
+                  <option value="unk">Unknown</option>
+                  <option value="sup">DC</option>
+                  <option value="vill">Marvel</option>
+                </select>
+              </label>
+              <label for="doc" class="label-form agregar-foto">Agregar foto
                   <input type="file" id="doc" accept=".jpg, .pdf, .png" name="doc" multiple>
-            </div>
+                </label>
               <div class="poderes">
-                <p>Poderes:</p>
+                <p>Poderes</p>
                 <div>
                   <input
                     type="checkbox"
@@ -121,6 +125,7 @@
                   />
                   <label for="poderes">Billetera gorda</label>
                 </div>
+                <hr>
               <div class="personaje">
                 <p>Tipo de personaje</p>
                 <label for="personaje1" class="vert">
@@ -139,13 +144,15 @@
                     name="personaje"
                     value="Villano"
                   />
-                  Villano / Villana</label
-                >
-            </div>
+                  Villano / Villana</label>
+              </div>
             </div>
           </div>
-              </form>
-              </section>
+        </form>
+        </div>
+        <input type="submit" value="Añadir" class="btn entrar">
+
+      </section>
     </main>
 
     <!-----------------FOOTER----------------->
