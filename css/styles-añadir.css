@@ -4,9 +4,10 @@ body {
 
 .section-container {
   background-color: var(--colorPrincipal);
-  margin: 5rem 10rem;
   border-radius: 20px;
   padding: 2rem;
+  max-width: 870px;
+  margin: 2rem auto;
 }
 
 h2 {
@@ -100,9 +101,10 @@ hr {
 }
 
 .btn {
+  text-align: center;
   font-size: 2rem;
-  padding: 1rem 10rem;
-  margin: 3% 25%;
+  padding: 1rem 3rem;
+  margin: 3% 38%;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
@@ -133,4 +135,32 @@ form select{
 
 form input[type="date"], textarea {
   font-family: 'Inter', sans-serif;
+}
+
+/* -------MEDIAS-QUERIES------- */
+
+@media screen and (max-width:850px) {
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:580px) {
+  .form-container {
+    flex-direction: column;
+  }
+  .btn {
+    margin: 3% 30%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  body {
+    width: 100vw;
+  }
+  .form-container {
+    flex-direction: column;
+  }
+
 }
