@@ -139,11 +139,11 @@ main {
   top: 48%;
   z-index: 8;
   box-shadow: 0 5px 5px rgb(0 0 0 / 24%);
+  transition: all 0.5s;
 }
 
 .icono-mas:hover {
   background-color: #001D2D;
-  transition: all 0.5s;
 }
 
 .mas {
@@ -209,13 +209,13 @@ main {
   padding: 10px;
   margin: 50px;
   border-radius: 8%;
+  transition: all 0.5s;
 }
 
 .card-btn:hover {
   background-color: #001D2D;
   box-shadow: 0 5px 5px rgb(0 0 0 / 24%);
   font-weight: 700;
-  transition: all 0.5s;
 }
 
 .card-background {

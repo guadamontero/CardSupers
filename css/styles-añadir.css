@@ -123,6 +123,7 @@ form input, form textarea{
   font-size: 1em;
   border: transparent;
   border-radius: 10px;
+  outline: none;
 }
 
 form select{
