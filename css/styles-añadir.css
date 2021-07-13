@@ -107,11 +107,11 @@ hr {
   margin: 3% 38%;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+  transition: all 1s;
 }
 
 input[type="submit"]:hover{
   background-color: #001D2D;
-  transition: all 0.4s;
   box-shadow: 0 5px 5px rgb(0 0 0 / 15%);
   color: #fff;
 }
