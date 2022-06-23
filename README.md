@@ -2,5 +2,5 @@
 
 ## Lenguajes utilizados: HTML y CSS
 
-https://guadamontero.github.io/CardSupers/
+https://guadamontero.github.io/HTML-CSS-CardSupers/
 
